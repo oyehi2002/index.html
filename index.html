@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shreya Ramraika — Product Manager</title>
+<style>
+:root{--bg:#fafaf9;--card:#fff;--ink:#111114;--mute:#62626d;--line:#e7e5e0;--acc:#4f46e5;--ok:#0f9d6b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0d11;--card:#16161c;--ink:#f4f3ef;--mute:#a2a2ae;--line:#272731;--acc:#8b83ff;--ok:#2fd29b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d0d11;--card:#16161c;--ink:#f4f3ef;--mute:#a2a2ae;--line:#272731;--acc:#8b83ff;--ok:#2fd29b;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:56px;gap:16px}
+nav b{white-space:nowrap}
+nav div{display:flex;gap:20px;font-size:14px;color:var(--mute);overflow-x:auto}
+nav div a{white-space:nowrap}
+.hero{background:#0b0b12;color:#f4f3ef;padding:88px 0 72px;background-image:radial-gradient(60% 80% at 85% 0%,#4f46e555,transparent),radial-gradient(40% 60% at 0% 100%,#0f9d6b33,transparent)}
+.pill{display:inline-block;font-size:13px;font-weight:600;color:#c9c5ff;border:1px solid #ffffff2e;border-radius:99px;padding:5px 14px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.04;letter-spacing:-.035em;margin:22px 0 20px;max-width:800px}
+.lead{font-size:19px;color:#b4b3c1;max-width:620px;margin:0 0 30px}
+.btn{display:inline-block;padding:13px 24px;border-radius:12px;font-weight:600;border:1px solid #ffffff40;margin:0 10px 10px 0}
+.btn.p{background:#fff;color:#111;border-color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#ffffff1f;border:1px solid #ffffff1f;border-radius:16px;overflow:hidden;margin-top:52px}
+.stat{background:#0b0b12;padding:22px 20px}
+.stat b{display:block;font-size:34px;letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:13px;color:#9d9cab}
+@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}}
+section{padding:72px 0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:0 0 10px}
+h2{font-size:clamp(28px,4.5vw,42px);line-height:1.1;letter-spacing:-.03em;margin:0 0 14px}
+.sub{color:var(--mute);font-size:18px;max-width:620px;margin:0 0 48px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:44px 0;border-top:1px solid var(--line)}
+.row.flip .txt{order:2}
+@media(max-width:800px){.row{grid-template-columns:1fr;gap:28px}.row.flip .txt{order:0}}
+.num{font-size:13px;font-weight:700;color:var(--acc)}
+h3{font-size:26px;line-height:1.2;letter-spacing:-.02em;margin:6px 0 12px}
+.txt p{color:var(--mute);margin:0 0 14px}
+.txt ul{list-style:none;padding:0;margin:16px 0 0}
+.txt li{padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+.txt li b{display:block;font-size:15px}
+.txt li span{color:var(--mute)}
+.mock{background:#0b0b12;border-radius:20px;padding:22px;color:#f4f3ef;box-shadow:0 24px 60px -24px #4f46e577;font-size:14px}
+.lnk{display:inline-block;margin-top:18px;font-weight:600;color:var(--acc);border-bottom:2px solid var(--acc);padding-bottom:2px}
+.cap{font-size:12px;color:var(--mute);margin:10px 0 0;text-align:center}
+.bub{padding:10px 14px;border-radius:14px;margin:0 0 10px;max-width:88%}
+.u{background:#4f46e5;margin-left:auto;border-bottom-right-radius:4px}
+.a{background:#1c1c28;border-bottom-left-radius:4px}
+.act{border:1px solid #4f46e5;background:#14132b;border-radius:14px;padding:14px;margin-top:6px}
+.act small{color:#9d9cab;display:block;margin-bottom:6px}
+.act .chg{font-weight:700;margin-bottom:12px}
+.act .b{display:inline-block;padding:7px 16px;border-radius:9px;font-weight:600;font-size:13px;margin-right:8px;background:#0f9d6b}
+.act .b.x{background:#2a2a38}
+.phone{width:230px;margin:0 auto;background:#0b0b12;border:6px solid #23232f;border-radius:34px;padding:18px 14px;color:#f4f3ef;font-size:12px;box-shadow:0 24px 60px -24px #4f46e577}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.tile{background:#1a1a26;border-radius:12px;padding:10px}
+.tile i{display:block;font-style:normal;color:#8d8c9c;font-size:11px}
+.tile b{font-size:17px}
+.spark{display:flex;align-items:flex-end;gap:5px;height:64px;background:#1a1a26;border-radius:12px;padding:10px}
+.spark s{flex:1;background:linear-gradient(#8b83ff,#4f46e5);border-radius:3px}
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.cmp .l{font-size:13px;color:var(--mute);margin:14px 0 6px}
+.cmp .bar{height:38px;border-radius:9px;line-height:38px;padding:0 14px;font-weight:600;color:#fff;font-size:14px;white-space:nowrap}
+.cmp .b1{background:#8a8a96;width:100%}
+.cmp .b2{background:var(--acc);width:9%;min-width:110px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chips span{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:860px){.proof{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.proof{grid-template-columns:1fr}}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.pc b{display:block;font-size:30px;letter-spacing:-.03em;color:var(--acc);line-height:1.1}
+.pc h4{margin:10px 0 4px;font-size:16px}
+.pc p{margin:0;color:var(--mute);font-size:14px}
+.tl{display:grid;gap:0}
+.tl .it{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+@media(max-width:700px){.tl .it{grid-template-columns:1fr;gap:6px}}
+.tl .d{color:var(--mute);font-size:14px}
+.tl h4{margin:0 0 4px;font-size:18px}
+.tl p{margin:0;color:var(--mute)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:800px){.g3{grid-template-columns:1fr}}
+.pj{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.pj h4{margin:0 0 4px;font-size:17px}
+.pj small{color:var(--acc);font-weight:600}
+.pj p{color:var(--mute);margin:10px 0 0;font-size:15px}
+.cta{background:#0b0b12;color:#f4f3ef;border-radius:24px;padding:56px 28px;text-align:center;background-image:radial-gradient(60% 90% at 50% 0%,#4f46e555,transparent)}
+.cta h2{margin:0 0 10px}
+.cta p{color:#b4b3c1;margin:0 auto 26px;max-width:480px}
+footer{padding:32px 0 56px;color:var(--mute);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>Shreya Ramraika</b><div><a href="#work">Launches</a><a href="#how">How I work</a><a href="#exp">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="w">
+  <span class="pill">Associate Product Manager · SellerGeni · Bengaluru</span>
+  <h1>I launch AI products and unblock stalled roadmaps.</h1>
+  <p class="lead">At SellerGeni I launched an AI agent product, launched a mobile app, and shipped three marketplace integrations in four months after a four-year plateau.</p>
+  <a class="btn p" href="#work">See what I shipped</a><a class="btn" href="#contact">Get in touch</a>
+  <div class="stats">
+    <div class="stat"><b>3</b><span>launches in under a year</span></div>
+    <div class="stat"><b>4 mo</b><span>to ship 3 integrations after 4 years stalled</span></div>
+    <div class="stat"><b>−60%</b><span>delivery delays</span></div>
+    <div class="stat"><b>−38%</b><span>engineering rework</span></div>
+  </div>
+</div></header>
+
+<main class="w">
+<section id="work" style="padding-bottom:24px">
+  <p class="eyebrow">What I shipped</p>
+  <h2>Three launches at SellerGeni</h2>
+  <p class="sub">I led a 13-person squad (Frontend, Backend, QA, UI/UX) across five workstreams.</p>
+
+  <div class="row">
+    <div class="txt">
+      <span class="num">01 · NEW PRODUCT, 0 TO 1</span>
+      <h3>SellerGen: 8 AI Employees for e-commerce sellers</h3>
+      <p>A separate product from SellerGeni, built around the three things sellers ask for most.</p>
+      <ul>
+        <li><b>Instant answers</b><span>ACOS, spend, listing status, inventory and account health in under 5 seconds.</span></li>
+        <li><b>Automated reports</b><span>Daily snapshots, weekly summaries and monthly P&amp;L, delivered without being asked.</span></li>
+        <li><b>Guided actions</b><span>Bids, budgets, keywords, listings and prices. The agent shows exactly what it will do, then waits for the seller’s confirmation.</span></li>
+      </ul>
+      <a class="lnk" href="https://sellergen.ai/" target="_blank" rel="noopener">Visit sellergen.ai →</a>
+    </div>
+    <div>
+      <div class="mock">
+        <div class="bub u">How is my Summer Sale campaign doing?</div>
+        <div class="bub a">ACOS is 18.4% and spend is ₹12,400 today. Budget runs out by 6 pm.</div>
+        <div class="act"><small>Proposed change</small><div class="chg">Raise daily budget ₹1,000 → ₹1,500</div><span class="b">Confirm</span><span class="b x">Cancel</span></div>
+      </div>
+      <p class="cap">Illustrative interface, not real data</p>
+    </div>
+  </div>
+
+  <div class="row flip">
+    <div class="txt">
+      <span class="num">02 · MOBILE</span>
+      <h3>SellerGeni mobile app</h3>
+      <p>Existing sellers can monitor, communicate about and optimise their e-commerce ads from anywhere, instead of being tied to a desktop dashboard.</p>
+      <a class="lnk" href="https://apps.apple.com/in/app/sellergeni/id6444259058" target="_blank" rel="noopener">View on the App Store →</a>
+    </div>
+    <div>
+      <div class="phone">
+        <b style="font-size:14px">Today</b>
+        <div class="tiles"><div class="tile"><i>Spend</i><b>₹12.4k</b></div><div class="tile"><i>ACOS</i><b>18.4%</b></div></div>
+        <div class="spark"><s style="height:35%"></s><s style="height:50%"></s><s style="height:42%"></s><s style="height:68%"></s><s style="height:58%"></s><s style="height:80%"></s><s style="height:92%"></s></div>
+      </div>
+      <p class="cap">Illustrative interface, not real data</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="txt">
+      <span class="num">03 · GROWTH</span>
+      <h3>Three new marketplace integrations</h3>
+      <p>Integrations had been stuck for four years, which capped who could use the product. I unblocked them with a clear roadmap, tight scope and early risk tracking.</p>
+      <div class="chips"><span>Flipkart</span><span>Walmart</span><span>Blinkit</span></div>
+      <a class="lnk" href="https://www.sellergeni.com/" target="_blank" rel="noopener">Visit sellergeni.com →</a>
+    </div>
+    <div class="cmp">
+      <div class="l">Before</div><div class="bar b1">4 years, no new integrations</div>
+      <div class="l">After</div><div class="bar b2">4 months</div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:40px">
+  <p class="eyebrow">How I work</p>
+  <h2>Habits that produce results</h2>
+  <p class="sub">Each habit below maps to something I measured.</p>
+  <div class="proof">
+    <div class="pc"><b>−60%</b><h4>Make risk visible</h4><p>Dependency maps, milestone tracking and early risk flags cut delivery delays.</p></div>
+    <div class="pc"><b>−38%</b><h4>Write it down</h4><p>PRDs, user stories and edge-case flows cut rework and sprint leakage.</p></div>
+    <div class="pc"><b>RICE</b><h4>Prioritise hard</h4><p>RICE and MoSCoW each quarter, matched to real sprint capacity.</p></div>
+    <div class="pc"><b>Figma</b><h4>Test first</h4><p>Figma and Alloy prototypes surface friction before code is written.</p></div>
+  </div>
+</section>
+
+<section id="exp" style="padding-top:20px">
+  <p class="eyebrow">Experience</p>
+  <h2>Where I’ve worked</h2>
+  <div class="tl" style="margin-top:28px">
+    <div class="it"><div class="d">Apr 2025 – present<br>Bengaluru</div><div><h4>Associate Product Manager, SellerGeni</h4><p>Own the roadmap, PRDs and delivery for AI products and integrations. Run sprint planning, backlog grooming and weekly KPI reviews with leadership.</p></div></div>
+    <div class="it"><div class="d">Nov 2024 – Apr 2025<br>Delhi</div><div><h4>Associate, EY</h4><p>Delivered data-backed financial and strategic analyses and turned them into recommendations for product and business stakeholders.</p></div></div>
+    <div class="it"><div class="d">Sep 2022 – Oct 2024<br>Remote</div><div><h4>AI Trainer and Prompt Engineer, Soul AI</h4><p>Trained AI systems through prompt engineering and evaluated their outputs to improve accuracy, safety and reliability. This taught me where AI works well and where it fails.</p></div></div>
+  </div>
+</section>
+
+<section id="projects" style="padding-top:20px">
+  <p class="eyebrow">Side projects</p>
+  <h2>Things I built myself</h2>
+  <div class="g3" style="margin-top:28px">
+    <div class="pj"><h4>AI Market Intelligence</h4><small>Python · OpenAI API · Scraping</small><p>Automated B2B lead generation and research, cutting competitive analysis time by about 70%.</p></div>
+    <div class="pj"><h4>Financial Sentiment Analysis</h4><small>Python · FinBERT · NLP</small><p>Real-time sentiment analysis of Indian stock market news.</p></div>
+    <div class="pj"><h4>AutoOrganizeAI</h4><small>Python · NLP · Computer vision</small><p>An intelligent file organiser, owned from scoping to deployment.</p></div>
+  </div>
+  <div class="chips"><span>SQL</span><span>Python</span><span>OpenAI API</span><span>LangChain</span><span>Power BI</span><span>A/B testing</span><span>Go-to-market</span></div>
+  <p style="color:var(--mute);font-size:14px;margin-top:20px">PG Program in Data Science and AI, IIIT Bangalore · B.Com (Hons), University of Delhi</p>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="cta"><h2>Hiring a Product Manager?</h2><p>I’m open to PM and APM roles, especially in AI products.</p>
+  <a class="btn p" href="mailto:shreyaramraika1@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/shreyaramraikaz">LinkedIn</a><a class="btn" href="https://github.com/oyehi2002">GitHub</a></div>
+</section>
+</main>
+<footer>© Shreya Ramraika</footer>
+</body>
+</html>
